@@ -67,23 +67,51 @@ namespace :phoenix do
     end
   end
 
+  #Requires use of exrm!
   task :release do
     on roles(:app) do |host|
       within(current_path) do
-        execute(:mix, "deps.get")
-        execute(:mix, "deps.compile")
-        # Figure out a check if we need to migrate
-        # execute(:mix, "ecto.migrate")
+        execute(:mix, "release")
       end
     end
   end
 
-  task :serve do
-      on roles(:app) do |host|
-          within(current_path) do
-            execute(:elixir, "--detached","-S", "mix", "phoenix.server")
-          end
+  #requires use of exrm!
+  task :clean do
+    on roles(:app) do |host|
+      within(current_path) do
+        execute(:mix, "deps.clean", "--all")
       end
+    end
+  end
+
+  task :migrations do
+  on roles(:web) do |host|
+    within(current_path) do
+      execute(:mix, "ecto.migrate")
+    end
+  end
+end
+
+  task :serve do
+      # on roles(:app) do |host|
+      #     within(current_path) do
+      #       execute(:elixir, "--detached","-S", "mix", "phoenix.server")
+      #     end
+      # end
+    on roles(:app) do |host|
+      invoke("stop")
+      invoke("start")
+    end
+
+  end
+
+  task :stop do
+
+  end
+
+  task :start do
+
   end
 
 end

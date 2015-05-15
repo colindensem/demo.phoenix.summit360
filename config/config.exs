@@ -8,6 +8,7 @@ use Mix.Config
 # Configures the endpoint
 config :summit360_www, Summit360Www.Endpoint,
   url: [host: "localhost"],
+  server: true,
   root: Path.dirname(__DIR__),
   secret_key_base: "d1Ip7k62pZTEO62nkUabmR6RqkrqPhmw/ZorvvxGgeWfQPlK6W67ykjgIsnlqrDO",
   debug_errors: false,
