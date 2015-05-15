@@ -1,6 +1,7 @@
 <div class="jumbotron">
   <h2>Welcome to Summit360.</h2>
-  <p class="lead">Page text change to test server code reload. <a href="http://phoenixframework.org">Phoenix</a> and <a href="http://elixir-lang.org">Elixir</a> give you both.</p>
+  <p class="lead">Page text change to test server code reload.<br/>
+    <a href="http://phoenixframework.org">Phoenix</a> and <a href="http://elixir-lang.org">Elixir</a> give you both.</p>
 </div>
 
 <div class="row marketing">
