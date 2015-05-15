@@ -48,7 +48,11 @@ namespace :dependencies do
 
 end
 
-task :brunch_assets do
+
+
+namespace :phoenix do
+
+task :brunch do
   on roles(:app) do |host|
     within(current_path) do
       execute(:brunch, "build", "--production")
@@ -56,10 +60,7 @@ task :brunch_assets do
   end
 end
 
-
-namespace :phoenix do
-
-  task :assets do
+  task :digest do
     on roles(:app) do |host|
       within(current_path) do
         execute(:mix, "phoenix.digest")
@@ -77,7 +78,7 @@ namespace :phoenix do
   end
 
   #requires use of exrm!
-  task :clean do
+  task :cleanup do
     on roles(:app) do |host|
       within(current_path) do
         execute(:mix, "deps.clean", "--all")
@@ -86,9 +87,9 @@ namespace :phoenix do
   end
 
   task :migrations do
-  on roles(:web) do |host|
+  on roles(:app) do |host|
     within(current_path) do
-      execute(:mix, "ecto.migrate")
+      #execute(:mix, "ecto.migrate")
     end
   end
 end
@@ -100,32 +101,74 @@ end
       #     end
       # end
     on roles(:app) do |host|
-      invoke("stop")
-      invoke("start")
+      invoke("phoenix:stop")
+      invoke("phoenix:start")
     end
 
   end
 
-  task :stop do
+  task :ping do
+    on roles(:app) do |host|
+      within("#{current_path}/rel/summit360_www/bin") do
+        execute("./summit360_www", "ping")
+      end
+    end
+  end
 
+  task :stop do
+    on roles(:app) do |host|
+      within("#{current_path}/rel/summit360_www/bin") do
+        begin
+          execute("./summit360_www", "stop")
+        rescue
+          puts "?"*25
+          puts "#{host} was not serving Phoenix |> sad"
+          puts "-"*25
+        end
+      end
+    end
   end
 
   task :start do
-
+    on roles(:app) do |host|
+      within("#{current_path}/rel/summit360_www/bin") do
+        begin
+          execute("./summit360_www", "start")
+        rescue
+          puts "!"*25
+          puts "#{host} didn't start serving Phoenix |> concern"
+          puts "-"*25
+        end
+      end
+    end
   end
-
 end
 
 
 namespace :deploy do
 
-  after :deploy, "dependencies:phoenix"
-  after :deploy, "dependencies:npm"
+  # after :updated, "dependencies:phoenix"
+  # after :updated, "dependencies:npm"
+  # after :updated, :brunch_assets
+  # after :updated, 'phoenix:assets'
+  #after :published, 'phoenix:release'
 
-  after :deploy, :brunch_assets
-  after :deploy, 'phoenix:assets'
-  after :deploy, 'phoenix:release'
-  after 'deploy:publishing', 'phoenix:serve'
+  task :build do
+    invoke("dependencies:phoenix")
+    invoke("dependencies:npm")
+    invoke("phoenix:brunch")
+    invoke("phoenix:digest")
+    invoke("phoenix:release")
+  end
+
+
+  after :published, :build
+
+  #Restart, hopefully not a restart in the future.
+  after :published, 'phoenix:serve'
+
+  #cleandups
+  after :finishing, 'phoenix:cleanup'
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do

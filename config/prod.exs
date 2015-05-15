@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :summit360_www, Summit360Www.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "summit360.co.uk"],
+  url: [host: "188.226.130.197", port: 8088],
   cache_static_manifest: "priv/static/manifest.json"
 
 # ## SSL Support
@@ -38,7 +38,7 @@ config :logger, level: :info
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start the server for all endpoints:
 #
-#     config :phoenix, :serve_endpoints, true
+config :phoenix, :serve_endpoints, true
 #
 # Alternatively, you can configure exactly which server to
 # start per endpoint:
