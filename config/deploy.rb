@@ -25,7 +25,6 @@ set :linked_dirs, %w{
     priv/static/js
   }
 
-
 namespace :dependencies do
 
   # --force is used to try and force the install.
@@ -47,8 +46,6 @@ namespace :dependencies do
   end
 
 end
-
-
 
 namespace :phoenix do
 
@@ -95,11 +92,6 @@ end
 end
 
   task :serve do
-      # on roles(:app) do |host|
-      #     within(current_path) do
-      #       execute(:elixir, "--detached","-S", "mix", "phoenix.server")
-      #     end
-      # end
     on roles(:app) do |host|
       invoke("phoenix:stop")
       invoke("phoenix:start")
@@ -146,12 +138,6 @@ end
 
 
 namespace :deploy do
-
-  # after :updated, "dependencies:phoenix"
-  # after :updated, "dependencies:npm"
-  # after :updated, :brunch_assets
-  # after :updated, 'phoenix:assets'
-  #after :published, 'phoenix:release'
 
   task :build do
     invoke("dependencies:phoenix")
