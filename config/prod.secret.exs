@@ -10,7 +10,7 @@ config :summit360_www, Summit360Www.Endpoint,
 config :summit360_www, Summit360Www.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: System.get_env("SUMMIT360_WWW_PG_USERNAME"),
-  password:System.get_env("SUMMIT360_WWW_PG_PASSWORD"),
+  password: System.get_env("SUMMIT360_WWW_PG_PASSWORD"),
   database: System.get_env("SUMMIT360_WWW_PG_DATABASE"),
   size: 20 # The amount of database connections in the pool
 
