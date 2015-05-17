@@ -14,7 +14,9 @@ use Mix.Config
 config :summit360_www, Summit360Www.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [host: "188.226.130.197", port: 8088],
-  cache_static_manifest: "priv/static/manifest.json"
+  cache_static_manifest: "priv/static/manifest.json",
+  server: true
+
 
 # ## SSL Support
 #
