@@ -37,7 +37,7 @@ defmodule Summit360Www.Mixfile do
      {:exrm, "~> 0.14.16"},
      {:phoenix_live_reload, "~> 0.4", only: :dev},
      {:cowboy, "~> 1.0"},
-     { :edeliver, github: "boldpoker/edeliver", compile: "mkdir -p ebin && cp src/edeliver.app.src ebin/edeliver.app" }
+     { :edeliver, github: "boldpoker/edeliver", compile: "mkdir -p ebin && cp src/edeliver.app.src ebin/edeliver.app", app: false }
    ]
   end
 end
