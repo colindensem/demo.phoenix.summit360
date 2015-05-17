@@ -3,7 +3,7 @@ defmodule Summit360Www.Mixfile do
 
   def project do
     [app: :summit360_www,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix] ++ Mix.compilers,
