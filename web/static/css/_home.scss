@@ -1,0 +1,194 @@
+//_home.scss
+//
+//
+.font-thin {
+  font-weight: 200;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.story {
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 65px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#slide-1 {
+  background-image: url('../images/bg-02.jpg');
+  color: #fff;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+}
+
+#slide-1 h1 {
+  padding-top: 130px;
+}
+
+
+@media (max-width: 991px) {
+  #slide-1 {
+    background-position: -70% 0, 170% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #slide-1 {
+    background-image: none;
+  }
+}
+#home-row-1,
+#home-row-2 {
+  padding-top: 25px;
+}
+
+#home-row-1 h1 {
+  font-size: 54px;
+}
+
+#home-row-1 h4 {
+  font-size: 32px;
+}
+
+#home-row-2 {
+  font-size: 25px;
+}
+
+#home-row-2 .tall-row {
+  height: 232px;
+  padding-top: 30px;
+}
+
+#home-row-2 .tall-row .home-hover {
+  height: 166px;
+  overflow: hidden;
+  padding-top: 26px;
+  transition: all ease-in .5s;
+}
+
+#home-row-2 .tall-row .home-hover:hover {
+  height: 166px;
+  padding-top: 0;
+}
+@media (max-width: 767px) {
+  #home-row-1,
+  #home-row-2 {
+    padding-top: 16px;
+  }
+
+  #home-row-1 h1 {
+    font-size: 35px;
+  }
+
+  #home-row-1 h4 {
+    font-size: 21px;
+  }
+
+  #home-row-2 {
+    font-size: 16px;
+  }
+}
+
+#slide-2 {
+  background-color: darken($app_theme_bg_color, 15%);
+  color: $app_theme_color;
+  padding-top:90px;
+}
+#slide-3 {
+  background-color: darken($app_theme_bg_color, 10%);
+  color: $app_theme_color;
+  padding-top:90px;
+}
+#slide-4 {
+  background-color: darken($app_theme_bg_color, 5%);
+  color: $app_theme_color;
+  padding-top:90px;
+}
+
+
+.title-row {
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+
+//* Feature Box - aka popping icons
+.feature-box a {
+  color:#333333
+}
+.feature-box a:hover span.link{
+  color:$app_theme_bg_color
+}
+.feature-box span.link{
+  color:#333333
+}
+.feature-box .fa-circle{
+  color:$app_theme_bg_color
+}
+.feature-box-animated:hover .fa-stack-1x{
+  color: $app_theme_bg_color;
+}
+.feature-box{
+  text-align:center;margin-bottom:15px
+}
+.feature-box a:hover{
+  text-decoration:none
+}
+.feature-box .fa-stack{
+  width:4em;height:4em;line-height:4em
+}
+.feature-box .fa-stack-2x{
+  font-size:4em
+}
+.feature-box .fa-stack-1x{
+  font-size:2em
+}
+.feature-box-animated .fa{
+  -webkit-transition:color 0.3s;
+  transition:color 0.3s
+}
+.feature-box-animated .fa-stack-2x{
+  -webkit-transition:-webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition:-moz-transform 0.2s, opacity 0.2s;
+  -o-transition:-o-transform 0.2s, opacity 0.2s;
+  transition:transform 0.2s, opacity 0.2s
+}
+.feature-box-animated:hover .fa-stack-2x{
+  -webkit-transform:scale(1.3);
+  -ms-transform:scale(1.3);transform:scale(1.3);
+  opacity:0;
+  filter:alpha(opacity=0)
+}
+
+.contact {
+  background-color: #fff;
+}
+
+//*Footer Styles
+footer {
+  color: #fff;
+
+  .bottom {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .copy {
+    font-size: 0.8em;
+  }
+}

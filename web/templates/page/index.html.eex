@@ -1,41 +1,95 @@
-<div class="jumbotron">
-  <h2>Welcome to Summit360.</h2>
-  <p class="lead">Test server code reload.<br/>
-    <a href="http://phoenixframework.org">Phoenix</a> and <a href="http://elixir-lang.org">Elixir</a> give you both.</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="http://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+<section id="slide-1" data-slide="1" class="story">
+  <div class="container">
+    <div id="home-row-1" class="row clearfix">
+      <div class="col-xs-12">
+        <h1 class="font-semibold">SUMMIT<span class="font-thin">360</span></h1>
+        <h4 class="font-thin">An<span class="font-semibold"> independent developer </span>based in Sheffield, UK.</h4>
+      </div>
+    </div>
+    <div id="home-row-2" class="row clearfix">
+      <div class="tall-row col-xs-4">
+        <div data-slide="3" class="home-hover navigation-slide"><span class="fa fa-lg"><i class="fa fa-cubes fa-2x fa-inverse"></i></span></div><span>DEVELOPMENT</span>
+      </div>
+      <div class="tall-row col-xs-4">
+        <div data-slide="2" class="home-hover navigation-slide"><span class="fa fa-lg"><i class="fa fa-heartbeat fa-2x fa-inverse"></i></span></div><span>STARTUPS</span>
+      </div>
+      <div class="tall-row col-xs-4">
+        <div data-slide="4" class="home-hover navigation-slide"><span class="fa fa-lg"><i class="fa fa-support fa-2x fa-inverse"></i></span></div><span>CONSULTING</span>
+      </div>
+    </div>
   </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/issues?state=open">Issues</a>
-      </li>
-      <li>
-        <a href="irc://irc.freenode.net/elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
+</section>
+<div id="slide-2" data-slide="2" class="slide story">
+  <div class="container">
+    <div class="row title-row">
+      <div class="col-xs-12"><span class="font-thin">With consulting,  I</span> <span class="font-semibold">study &amp; analyse</span> <span class="font-thin">your problems.</span></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-binoculars fa-3x"></i></p>
+        <h2><span class="font-thin">Search</span> <span class="font-semibold">Solutions</span></h2>
+        <h4 class="font-thin">Not everything is solved with new software. We'll collaboratively explore your issues.</h4>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-road fa-3x"></i></p>
+        <h2><span class="font-thin">Plan</span> <span class="font-semibold">Ahead</span></h2>
+        <h4 class="font-thin">Working with you, in planning your next steps. I can work with teams or individuals to coach and develop processes.</h4>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-eye fa-3x"></i></p>
+        <h2><span class="font-thin">Look</span> <span class="font-semibold">Into</span></h2>
+        <h4 class="font-thin">Alternatively we can honestly discuss and brainstorm a specific challenge within your business.</h4>
+      </div>
+    </div>
   </div>
 </div>
-
+<div id="slide-3" data-slide="3" class="slide story">
+  <div class="container">
+    <div class="row title-row">
+      <div class="col-xs-12"><span class="font-thin">In startups, it is important to</span> <span class="font-semibold">validate ideas</span> <span class="font-thin">early.</span></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-bolt fa-3x"></i></p>
+        <h2><span class="font-thin">Minimum</span> <span class="font-semibold">Viable</span> <span class="font-thin">Product</span></h2>
+        <h4 class="font-thin">We'll focus on the core idea, establish your minimum viable product. Then strive to get something built as fast as possible.</h4>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-group fa-3x"></i></p>
+        <h2><span class="font-thin">Customer</span> <span class="font-semibold">Feedback</span></h2>
+        <h4 class="font-thin">Use customer discovery and feedback to improve your product and offering.</h4>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-line-chart fa-3x"></i></p>
+        <h2><span class="font-thin">Iterate &amp;</span> <span class="font-semibold">Measure</span></h2>
+        <h4 class="font-thin">Iterate, pivot &amp; measure the changes, for your idea to grow into a success.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="slide-4" data-slide="4" class="section story">
+  <div class="container">
+    <div class="row title-row">
+      <div class="col-xs-12"><span class="font-thin">I develop</span> <span class="font-semibold">bespoke</span> <span class="font-thin">web applications for you.</span></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-cog fa-3x"></i></p>
+        <h2><span class="font-thin">Project</span> <span class="font-semibold">Discovery</span></h2>
+        <h4 class="font-thin">Working with you to understand your challenges, we'll work out the solution required.</h4>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-cubes fa-3x"></i></p>
+        <h2><span class="font-thin">Building the</span> <span class="font-semibold">Solution</span></h2>
+        <h4 class="font-thin">I'm working with software based on Ruby, Elixir and Javascript for rapid &amp; dependable development. I'll construct the components required to build your project.</h4>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <p><i class="fa fa-gift fa-3x"></i></p>
+        <h2><span class="font-thin">Delivery &amp;</span>
+          <aspan class="font-semibold">Support</aspan>
+        </h2>
+        <h4 class="font-thin">Any project delivered contains a product to be maintained and improved upon.</h4>
+      </div>
+    </div>
+  </div>
+</div>

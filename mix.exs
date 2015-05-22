@@ -35,6 +35,7 @@ defmodule Summit360Www.Mixfile do
      {:phoenix_html, "~> 1.0"},
      {:exrm, "~> 0.14.16"},
      {:phoenix_live_reload, "~> 0.4", only: :dev},
+
      {:cowboy, "~> 1.0"}]
   end
 end
