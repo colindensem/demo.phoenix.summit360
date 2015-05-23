@@ -24,7 +24,9 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class=""><a id="menu-link-1" href="/" title="Home Section"><span class="fa fa-home"></span> <span class="text">HOME</span></a></li>
+          <li class=""><a id="menu-link-1" href="/" title="Home Section"><span class="text">HOME</span></a></li>
+          <li class=""><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360"><span class="text">ABOUT</span></a></li>
+          <li class=""><a id="menu-link-3" href="/contact" title="Contact Us"><span class="text">CONTACT</span></a></li>
           <!--li(class="{{isNavActive 'about'}}")-->
           <!--  a(id="menu-link-2" href="about" title="About Section")-->
           <!--    span(class="fa fa-user")-->

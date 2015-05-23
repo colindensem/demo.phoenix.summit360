@@ -1,0 +1,89 @@
+<section id="slide-1" class="slide story background-alp black">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="section-heading">
+          <h2>Want to get in touch?</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box feature-box-animated">
+          <a href="mailto:hello@summit360.co.uk">
+            <div class="icons">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <h4>Email</h4>
+            <span class="link">hello@summit360.co.uk</span>
+          </a>
+        </div>
+      </div>
+
+      <!--<div class="col-sm-6 col-md-4">-->
+      <!--
+        <div class="feature-box feature-box-animated">
+          <a href="/contact">
+            <div class="icons">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <h4>Contact Form</h4>
+            <span class="link">Go to form</span>
+          </a>
+        </div> -->
+
+      <!--<div class="feature-box feature-box-animated">-->
+      <!--<div id="canvasQR">-->
+
+      <!--</div>-->
+      <!--</div>-->
+
+      <!--</div>-->
+
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box feature-box-animated">
+          <a href="tel:+441143602180">
+            <div class="icons">
+                <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <h4>Phone</h4>
+            <span class="link">+44 (0) 114 360 2 180</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="feature-box feature-box-animated">
+          <a href="mailto:hello@summit360.co.uk?subject=Lets grab a coffee">
+            <div class="icons">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
+        </span>
+            </div>
+            <h4>Coffee?</h4>
+            <span class="link">Lets get a coffee</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-xs-12 text-center">
+
+        <h3>Based in Sheffield, I work all over the UK</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38076.12687814235!2d-1.4732777897103035!3d53.383380593005946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1399631096766" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+      </div>
+
+  </div>
+
+</section>

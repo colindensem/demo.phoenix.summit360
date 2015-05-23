@@ -6,8 +6,6 @@ $bootstrap-sass-asset-helper: false !default;
 $app_theme_bg_color:  #0051B7;
 $app_theme_color:       #e4e6e5;
 
-
-
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -31,7 +29,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #2f2f2f !default;
+$body-bg:               #fff !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
