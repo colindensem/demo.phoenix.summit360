@@ -21,8 +21,7 @@ set :linked_dirs, %w{
     node_modules
     rel
     _build
-    priv/static/css
-    priv/static/js
+
   }
 
 namespace :dependencies do
@@ -148,7 +147,7 @@ namespace :deploy do
   end
 
 
-  after :published, :build
+  before :publishing, :build
 
   #Restart, hopefully not a restart in the future.
   after :published, 'phoenix:serve'
