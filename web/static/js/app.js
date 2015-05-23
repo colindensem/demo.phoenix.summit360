@@ -1,4 +1,4 @@
-import {Socket} from "phoenix"
+// import {Socket} from "phoenix"
 
 // let socket = new Socket("/ws")
 // socket.connect()
@@ -6,6 +6,8 @@ import {Socket} from "phoenix"
 // })
 
 let App = {
+
+
 }
 
 export default App
