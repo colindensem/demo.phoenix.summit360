@@ -8,6 +8,12 @@
 let App = {
 
 
+
 }
+
+document.addEventListener('DOMContentLoaded', function(event) {
+        cookieChoices.showCookieConsentBar('We use cookies for analytics only. ',
+          'close message', '', '');
+  });
 
 export default App
