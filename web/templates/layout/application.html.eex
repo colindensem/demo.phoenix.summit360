@@ -12,14 +12,13 @@
     <meta name="twitter:title" content="SUMMIT360">
     <meta name="twitter:description" content="Independent Software Developer, Sheffield, UK">
     <meta name="twitter:creator" content="@colindensem">
-
-    <meta name="twitter:image" content="https://summit360.co.uk/images/logo-share.png">
+    <meta name="twitter:image" content="https://summit360.co.uk/images/logo-share-250x250.png">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Deeveloping bespoke applications" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://summit360.co.uk" />
-    <meta property="og:image" content="https://summit360.co.uk/images/logo-share.png" />
+    <meta property="og:image" content="https://summit360.co.uk/images/logo-share-250x250.png" />
     <meta property="og:description" content="Independent Software Developer, Sheffield, UK" />
 
     <title>SUMMIT360 - Developing bespoke solutions for you.</title>
