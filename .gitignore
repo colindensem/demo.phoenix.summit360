@@ -8,6 +8,8 @@ erl_crash.dump
 
 # Static artifacts
 /node_modules
+/bower_components
+
 
 # Since we are building js and css from web/static,
 # we ignore priv/static/{css,js}. You may want to
@@ -25,3 +27,5 @@ erl_crash.dump
 
 #rel directory is a release directory, we're opting to do a release on the remote server initally.
 /rel
+
+
