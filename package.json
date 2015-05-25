@@ -9,5 +9,12 @@
     "javascript-brunch": ">= 1.0 < 1.8",
     "sass-brunch": "^1.8.10",
     "uglify-js-brunch": ">= 1.0 < 1.8"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "bower_components"
+  ],
+  "scripts": {
+    "postinstall": "bower install"
   }
 }

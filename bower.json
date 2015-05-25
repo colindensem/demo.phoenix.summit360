@@ -1,0 +1,6 @@
+{
+  "name": "summit360-www",
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
