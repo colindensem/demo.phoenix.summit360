@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scaleable=no">
     <meta name="description" content="Bespoke web software development with Ruby on Rails, Elixir and Javascript">
     <meta name="author" content="Summit 360 ~ Colin Densem">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary"><meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@summit360">
+    <meta name="twitter:title" content="SUMMIT360">
+    <meta name="twitter:description" content="Independent Software Developer, Sheffield, UK">
+    <meta name="twitter:creator" content="@colindensem">
+
+    <meta name="twitter:image" content="https://summit360.co.uk/images/logo-share.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Deeveloping bespoke applications" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://summit360.co.uk" />
+    <meta property="og:image" content="https://summit360.co.uk/images/logo-share.png" />
+    <meta property="og:description" content="Independent Software Developer, Sheffield, UK" />
 
     <title>SUMMIT360 - Developing bespoke solutions for you.</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext">
