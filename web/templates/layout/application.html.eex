@@ -27,11 +27,7 @@
           <li class=""><a id="menu-link-1" href="/" title="Home Section"><span class="text">HOME</span></a></li>
           <li class=""><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360"><span class="text">ABOUT</span></a></li>
           <li class=""><a id="menu-link-3" href="/contact" title="Contact Us"><span class="text">CONTACT</span></a></li>
-          <!--li(class="{{isNavActive 'about'}}")-->
-          <!--  a(id="menu-link-2" href="about" title="About Section")-->
-          <!--    span(class="fa fa-user")-->
-          <!--    span-->
-        </ul>
+         </ul>
       </div>
     </div>
   </nav>
@@ -57,7 +53,6 @@
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script>require("web/static/js/app")</script>
-
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

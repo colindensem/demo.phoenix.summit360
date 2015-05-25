@@ -19,6 +19,7 @@ set :linked_files, %w{
 set :linked_dirs, %w{
     deps
     node_modules
+    bower_components
     rel
     _build
 
@@ -30,7 +31,7 @@ namespace :dependencies do
   # If this 'takes too long' try manually first on server as deploy.
   task :phoenix do
     on roles(:app) do |host|
-      within(current_path) do
+      within(release_path) do
         execute(:mix, "deps.get", "--force")
       end
     end
@@ -38,8 +39,16 @@ namespace :dependencies do
 
   task :npm do
     on roles(:app) do |host|
-      within(current_path) do
+      within(release_path) do
         execute(:npm, "install")
+      end
+    end
+  end
+
+  task :bower do
+    on roles(:app) do |host|
+      within(release_path) do
+        execute(:bower, "install")
       end
     end
   end
@@ -50,7 +59,7 @@ namespace :phoenix do
 
 task :brunch do
   on roles(:app) do |host|
-    within(current_path) do
+    within(release_path) do
       execute(:brunch, "build", "--production")
     end
   end
@@ -58,7 +67,7 @@ end
 
   task :digest do
     on roles(:app) do |host|
-      within(current_path) do
+      within(release_path) do
         execute(:mix, "phoenix.digest")
       end
     end
@@ -67,7 +76,7 @@ end
   #Requires use of exrm!
   task :release do
     on roles(:app) do |host|
-      within(current_path) do
+      within(release_path) do
         execute(:mix, "release")
       end
     end
@@ -76,7 +85,7 @@ end
   #requires use of exrm!
   task :cleanup do
     on roles(:app) do |host|
-      within(current_path) do
+      within(release_path) do
         execute(:mix, "deps.clean", "--all")
       end
     end
@@ -84,7 +93,7 @@ end
 
   task :migrations do
   on roles(:app) do |host|
-    within(current_path) do
+    within(release_path) do
       #execute(:mix, "ecto.migrate")
     end
   end
@@ -141,6 +150,7 @@ namespace :deploy do
   task :build do
     invoke("dependencies:phoenix")
     invoke("dependencies:npm")
+    invoke("dependencies:bower")
     invoke("phoenix:brunch")
     invoke("phoenix:digest")
     invoke("phoenix:release")
