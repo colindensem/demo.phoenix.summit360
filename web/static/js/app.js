@@ -9,11 +9,20 @@ let App = {
 
 
 
-}
+};
 
 document.addEventListener('DOMContentLoaded', function(event) {
-        cookieChoices.showCookieConsentBar('We use cookies for analytics only. ',
-          'close message', '', '');
-  });
+	cookieChoices.showCookieConsentBar('We use cookies for analytics only. ',
+		'close message', '', '');
+});
+
+(function($) {
+	$(function() {
+
+		$('.button-collapse').sideNav();
+		$('.parallax').parallax();
+
+	}); // end of document ready
+})(jQuery); // end of jQuery name space
 
 export default App

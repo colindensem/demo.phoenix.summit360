@@ -1,6 +1,6 @@
 {
   "name": "summit360-www",
   "dependencies": {
-    "bootstrap": "~3.3.4"
+    "materialize": "~0.96.1"
   }
 }

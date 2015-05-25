@@ -1,76 +1,114 @@
-<section id="slide-1" class="slide story background background-lakes white">
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center deep-orange-text "><span class="bold">Colin</span> Densem</h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">A Developer, Founder and Climber</h5>
+        <p class="p-b-150 white-text text-darken-2">
+          I'm a creative person.
+          I see solutions where others don't.
+          I'll take a box of bits and create something.
+        </p>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="images/bg-02.jpg" alt="The Lake District"></div>
+</div>
+
+
 <div class="container">
+  <div class="section">
 
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center orange-text"><i class="mdi-image-flash-on"></i></h2>
+          <h5 class="center">Knowledge</h5>
 
-  <div class="row">
-    <div class="col-xs-12 col-sd-8 col-sd-offset-2">
-      <div class="section-heading">
-        <h1 class=""><span class="font-semibold">Colin</span> Densem</h1>
-        <h4>A Developer, Founder and Climber</h4>
+          <p class="light">  I've been working in IT for over 20 years.
+            In this time I've worked with multi system, multi-national manufacturing and logistics projects through to single page websites for self employed people.</p>
+        </div>
       </div>
 
-      <p class="p-b-150">
-            I'm a creative person.
-            I see solutions where others don't.
-            I'll take a box of bits and create something.
-          </p>
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center orange-text"><i class="mdi-social-group"></i></h2>
+          <h5 class="center">User Focused</h5>
+
+          <p class="light">My approach is to understand your problem, really get into your shoes.
+          We'll then discover what's needed to achieve a solution. Working with you to achieve, deliver and maintain your needs as they change.
+        </p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center orange-text"><i class="mdi-action-settings"></i></h2>
+          <h5 class="center">Not Possible?</h5>
+
+          <p class="light">  When it's deemed not possible, I've looked for a way to make it possible.
+            I'll also use my connections to skilled professionals in order to provide extra specialist skills.</p>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
-</section>
 
-<section id="slide-3" class="slide story">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 ">
-          <h2>What I bring</h2>
-          <p>
-            I've been working in IT for over 20 years.
-            In this time I've worked with multi system, multi-national manufacturing and logistics projects through to single page websites for self employed people.
-          </p>
-          <p>
-            My approach is to understand your problem, really get into your shoes.
-            We'll then discover what's needed to achieve a solution. Working with you to achieve, deliver and maintain your needs as they change.
-          </p>
-          <p>
-            When it's deemed not possible, I've looked for a way to make it possible.
-            I'll also use my connections to skilled professionals in order to provide extra specialist skills.
-          </p>
-      </div>
 
-      <div class="col-xs-12 col-md-6">
-        <h2>Asking Why?</h2>
-          <p>
-            Being able to ask why is crucial. Why do you want feature x?<br/>
-            Getting to the root of the problem is paramount.
-            This process often drives out crucial findings and is a valuable exercise in it's own.
-            More often we discover that a 'vital' feature isn't actually needed, saving you time and money.
-          </p>
-          <p>
-            There are many tools and theories about how to plan, execute and maintain projects.
-            I take a practical approach that works for us both, that's the right way,<span class="font-semibold"> our way.</span>
-          </p>
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light flow-text  white-text z-depth-1 ">I really enjoy solving problems.</h5>
       </div>
     </div>
   </div>
-</section>
+  <div class="parallax"><img src="images/bg-01.jpg" alt="Unsplashed background img 2"></div>
+</div>
 
-<section id="slide-4" class="slide story">
-  <div class="container">
+<div class="container">
+  <div class="section">
+
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <h2>Anything else?</h2>
-        <p>
+      <div class="col s12 center">
+        <h3><i class="mdi-communication-import-export orange-text"></i></h3>
+        <h4>Asking Why?</h4>
+        <p class="left-align light">
+          Being able to ask why is crucial. Why do you want feature x?<br/>
+          Getting to the root of the problem is paramount.
+          This process often drives out crucial findings and is a valuable exercise in it's own.
+          More often we discover that a 'vital' feature isn't actually needed, saving you time and money.
+          </p>
+          <p>There are many tools and theories about how to plan, execute and maintain projects.
+            I take a practical approach that works for us both, that's the right way,<span class="bold"> our way.</span></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-action-alarm-off orange-text"></i></h3>
+        <h4>Anything else...</h4>
+        <p class="left-align light">
             When I'm not working I'm trying to cling to rock faces as a climber.
             It's actually quite relaxing once safely up and down.
         </p>
-        <p>
+        <p class="left-align light">
             I co-founded a community for Skoda owners;
-            <a href="http://www.briskoda.net" target="_new" class="white">BRISKODA <i class="fa fa-external-link"></i></a>.
+            <a href="http://www.briskoda.net" target="_new" class="">BRISKODA <i class="fa fa-external-link"></i></a>.
             It's respected as a great owners/motoring community site.<br/>
             In 2013 it was also awared a top 10 visited UK site for automotive recreation by Hitwise</a>.
         </p>
-        <p class="last">
+        <p class="left-align light">
              If you're looking to start-up with an idea,
             or are already established but need to grow, please talk to me.
             I am confident I can help you on your path from idea through to a
@@ -78,6 +116,6 @@
         </p>
       </div>
     </div>
-  </div>
-</section>
 
+  </div>
+</div>

@@ -1,14 +1,14 @@
-<section id="slide-1" class="slide story background-alp black">
+<section id="slide-1" class="slide story">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col s12">
         <div class="section-heading">
           <h2>Want to get in touch?</h2>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6 col-md-4">
+      <div class="col  s4">
         <div class="feature-box feature-box-animated">
           <a href="mailto:hello@summit360.co.uk">
             <div class="icons">
@@ -23,30 +23,7 @@
         </div>
       </div>
 
-      <!--<div class="col-sm-6 col-md-4">-->
-      <!--
-        <div class="feature-box feature-box-animated">
-          <a href="/contact">
-            <div class="icons">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-            <h4>Contact Form</h4>
-            <span class="link">Go to form</span>
-          </a>
-        </div> -->
-
-      <!--<div class="feature-box feature-box-animated">-->
-      <!--<div id="canvasQR">-->
-
-      <!--</div>-->
-      <!--</div>-->
-
-      <!--</div>-->
-
-      <div class="col-sm-6 col-md-4">
+      <div class="col s4">
         <div class="feature-box feature-box-animated">
           <a href="tel:+441143602180">
             <div class="icons">
@@ -61,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4">
+      <div class="col s4">
         <div class="feature-box feature-box-animated">
           <a href="mailto:hello@summit360.co.uk?subject=Lets grab a coffee">
             <div class="icons">

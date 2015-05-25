@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Colin Densem develops solutions to problems with Ruby on Rails, Elixir and Javascript">
-    <meta name="author" content="Colin Densem ~ Summit 360 Ltd">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scaleable=no">
+    <meta name="description" content="Bespoke web software development with Ruby on Rails, Elixir and Javascript">
+    <meta name="author" content="Summit 360 ~ Colin Densem">
 
     <title>SUMMIT360 - Developing bespoke solutions for you.</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext">
@@ -17,18 +16,24 @@
 
   <body>
 
-    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">SUMMIT 360</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
+    <nav role="navigation" class="blue lighten-1">
+    <div class="nav-wrapper container">
+
+          <a id="logo-container" href="/" class="brand-logo">SUMMIT360</a>
+
+
+        <ul class="right hide-on-med-and-down">
           <li class=""><a id="menu-link-1" href="/" title="Home Section"><span class="text">HOME</span></a></li>
           <li class=""><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360"><span class="text">ABOUT</span></a></li>
           <li class=""><a id="menu-link-3" href="/contact" title="Contact Us"><span class="text">CONTACT</span></a></li>
          </ul>
-      </div>
+
+         <ul id="nav-mobile" class="side-nav">
+           <li class=""><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360"><span class="text">ABOUT</span></a></li>
+           <li class=""><a id="menu-link-3" href="/contact" title="Contact Us"><span class="text">CONTACT</span></a></li>
+         </ul>
+         <a href="#" data-activates="nav-mobile" class="button-collapse "><i class="mdi-navigation-menu"></i></a>
+
     </div>
   </nav>
 
@@ -41,14 +46,48 @@
 
 
 
-    <footer>
-      <div class="container bottom">
-        <div class="col-xs-2"><a href="/"><img src="/images/footer-logo.png" alt="Summit360 Link to Home" class="img img-responsive img-rounded"/></a></div>
-        <div class="col-xs-10">
-          <div class="copy"><span class="small">© Summit360 Ltd 2007-2015 - Company No: 5710517. Registered Office: 1 KEEPERS GATE, LYTHAM ST ANNES, LANCASHIRE FY8 4FB</span></div>
-          <ul class="footer-nav list-inline text-muted"></ul>
+    <footer class="page-footer blue">
+
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">SUMMIT 360</h5>
+            <p class="grey-text text-lighten-4">
+              Developing bespoke solutions for you.
+            </p>
+
+
+          </div>
+          <div class="col l3 s12">
+            <!-- <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul> -->
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="https://www.linkedin.com/in/colindensem"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+              <li><a class="white-text" href="https://www.twitter.com/colindensem"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+              <li><a class="white-text" href="https://www.facebook.com/Summit360"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="footer-copyright">
+            <div class="container">
+            <a href="/"><img src="/images/footer-logo.png" alt="Summit360 Link to Home" class="img img-responsive img-rounded"/></a>
+            © Summit360 Ltd 2007-2015
+            </div>
+
+        </div>
+      </div>
+
+
     </footer>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
