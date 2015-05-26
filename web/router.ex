@@ -15,9 +15,10 @@ defmodule Summit360Www.Router do
   scope "/", Summit360Www do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
-    get "/about", PageController, :about
-    get "/contact", PageController, :contact
+    get "/", PageController, :index, as: :root
+
+    get "/:page", PageController, :show, as: :page
+
   end
 
 

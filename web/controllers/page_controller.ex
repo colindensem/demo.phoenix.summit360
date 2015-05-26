@@ -4,15 +4,13 @@ defmodule Summit360Www.PageController do
   plug :action
 
   def index(conn, _params) do
-    render conn, "index.html"
+    render conn, "index.html", page: ""
   end
 
-  def about(conn,_params) do
-    render conn, "about.html"
-  end
 
-  def contact(conn,_params) do
-    render conn, "contact.html"
+  def show(conn, %{"page" => page}) do
+    conn
+    |> render "#{page}.html", page: page
   end
 
 

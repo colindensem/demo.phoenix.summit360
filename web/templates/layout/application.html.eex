@@ -25,7 +25,7 @@
     <meta property="fb:admins" content="682890668" />
 
 
-    <title>SUMMIT360 - Developing bespoke solutions for you.</title>
+    <title><%= capitalize(@page) %> SUMMIT360 - Developing bespoke solutions for you.</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -41,12 +41,13 @@
 
 
         <ul class="right hide-on-med-and-down">
-          <li class=""><a id="menu-link-1" href="/" title="Home Section"><span class="text">HOME</span></a></li>
+
           <li class=""><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360"><span class="text">ABOUT</span></a></li>
           <li class=""><a id="menu-link-3" href="/contact" title="Contact Us"><span class="text">CONTACT</span></a></li>
          </ul>
 
          <ul id="nav-mobile" class="side-nav">
+         <li class=""><a id="menu-link-1" href="/" title="Home Section"><span class="text">HOME</span></a></li>
            <li class=""><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360"><span class="text">ABOUT</span></a></li>
            <li class=""><a id="menu-link-3" href="/contact" title="Contact Us"><span class="text">CONTACT</span></a></li>
          </ul>
@@ -77,13 +78,13 @@
 
           </div>
           <div class="col l3 s12">
-            <!-- <h5 class="white-text">Settings</h5>
+            <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul> -->
+              <li><a id="menu-link-1" href="/" title="Home Section"  class="white-text">HOME</a></li>
+              <li><a id="menu-link-2" href="/about" title="About Colin Densem & Summit 360" class="white-text">ABOUT</a></li>
+              <li><a id="menu-link-3" href="/contact" title="Contact Us" class="white-text">CONTACT</a></li>
+
+            </ul>
           </div>
           <div class="col l3 s12">
             <h5 class="white-text">Connect</h5>
